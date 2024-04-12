@@ -20,6 +20,8 @@ namespace Allegiance.Blazor.Highcharts.Core.Options
         public string Color { get; set; }
         [JsonProperty("crop", NullValueHandling = NullValueHandling.Ignore)]
         public bool? Crop { get; set; }
+        [JsonProperty("distance", NullValueHandling = NullValueHandling.Ignore)]
+        public int? Distance { get; set; }
         [JsonProperty("enabled", NullValueHandling = NullValueHandling.Ignore)]
         public bool? Enabled { get; set; }
         [JsonProperty("format", NullValueHandling = NullValueHandling.Ignore)]

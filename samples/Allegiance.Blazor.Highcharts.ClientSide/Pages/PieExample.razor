@@ -120,10 +120,26 @@
                 AllowPointSelect = false,
                 ShowInLegend = true,
                 Cursor = CursorType.Pointer,
-                DataLabels = new Labels(false),
+                // DataLabels = new Labels(false),
                 States = new States(new Hover(false)),
             },
-            Series = null
+            Series = new PlotOptionsSeries
+            {
+                DataLabels = new List<DataLabels>
+                {
+                    new DataLabels
+                    {
+                        Enabled = true,
+                        Distance = 20,
+                    },
+                    new DataLabels
+                    {
+                        Enabled = true,
+                        Distance = -40,
+                        Format = "{point.percentage:.1f}%"
+                    }
+                },
+            },
         },
         Title = new Title("Browser market shares in January, 2018"),
         Series = new List<SeriesElement>()
