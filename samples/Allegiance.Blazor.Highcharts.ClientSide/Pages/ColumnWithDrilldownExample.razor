@@ -221,10 +221,13 @@
                 Series = new PlotOptionsSeries()
                 {
                     PointWidth = 60,
-                    DataLabels = new DataLabels()
+                    DataLabels = new List<DataLabels>()
                     {
-                        Enabled = true,
-                        Format = "{point.y:.1f}%"
+                        new DataLabels
+                        {
+                            Enabled = true,
+                            Format = "{point.y:.1f}%"
+                        }
                     }
                 }
             },

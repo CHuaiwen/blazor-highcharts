@@ -15,7 +15,7 @@ namespace Allegiance.Blazor.Highcharts.Core.Options
         [JsonProperty("marker", NullValueHandling = NullValueHandling.Ignore)]
         public Marker Marker { get; set; }
         [JsonProperty("dataLabels", NullValueHandling = NullValueHandling.Ignore)]
-        public DataLabels DataLabels { get; set; }
+        public List<DataLabels> DataLabels { get; set; }
         [JsonProperty("enableMouseTracking", NullValueHandling = NullValueHandling.Ignore)]
         public bool? EnableMouseTracking { get; set; }
         [JsonProperty("states", NullValueHandling = NullValueHandling.Ignore)]
